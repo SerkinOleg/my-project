@@ -39,7 +39,7 @@ ul li {
 }
 
 .main-page-wrapper {
-  background: url("./img/top_pic.png") center top no-repeat, url("./img/bott_pic.png") center bottom no-repeat;  
+  background: url("../img/top_pic.png") center top no-repeat, url("../img/bott_pic.png") center bottom no-repeat;  
 }
 
 .wrapper {
