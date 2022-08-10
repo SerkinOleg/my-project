@@ -144,7 +144,11 @@ margin-bottom: 125px;
 .title {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 50px;   
+}
+
+.title--new {
+  background: url("../img/new.png") no-repeat 328px;
 }
 
 .offers__item {
