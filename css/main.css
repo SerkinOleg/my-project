@@ -322,7 +322,7 @@ margin-bottom: 125px;
 }
 
 .about__content {
-  background-image: linear-gradient(to left, #9289b8, #2F00FF);
+  background: linear-gradient(to right, #2F00FF, #9289b8);
   padding: 71px 81px;
   width: 785px;
   height: 455px;
