@@ -47,6 +47,7 @@ ul li {
   width: 100%;
   position: absolute;
   filter: grayscale(1);
+  left: 0;
 }
 
 .header__img--top {
@@ -127,9 +128,7 @@ ul li {
   margin-bottom: 190px;
 }
 
-.hello__container {
-  width: 637px;
-  margin-left: 375px;
+.hello__container {  
   position: relative;
 }
 
@@ -138,6 +137,7 @@ ul li {
   font-weight: bold;
   line-height: 1.1;
   margin-bottom: 18px;
+  width: 637px;
 }
 
 .hello__subtitle {
@@ -197,14 +197,13 @@ position: relative;
 .offers__title {
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .offers__feature {
   display: inline-block;
   vertical-align: top;  
-  margin-right: 52px;
-  
+  margin-right: 49px;    
 }
 
 .offers__feature:last-child {
@@ -216,20 +215,52 @@ position: relative;
   margin-right: 12px;
 }
 
-.offers__feature-text {
+.offers__feature-text90 {
   color: #666666;
   font-size: 16px;
-  display: inline;  
+  display: inline;
+  position: relative; 
+  margin-left: 40px;
+  
+}
+
+.offers__feature-text90::before {
+  position: absolute;
+  content: "";
+  background: url(../img/clock.png) no-repeat;
+  width: 26px;
+  height: 26px;   
+  left: -36px;
+  top: -2px;
+}
+
+.offers__feature-text70 {
+  color: #666666;
+  font-size: 16px;
+  display: inline;
+  position: relative; 
+  margin-left: 40px;
+  
+}
+
+.offers__feature-text70::before {
+  position: absolute;
+  content: "";
+  background: url(../img/qa.png) no-repeat;
+  width: 26px;
+  height: 26px;   
+  left: -36px;
+  top: -2px;
 }
 
 .offers__text {
   color: #303030;
   font-size: 14px;
-  margin-bottom: 27px;
+  margin-bottom: 27px;  
 }
 
 .offers__features{
-  margin-bottom: 20px;   
+  margin-bottom: 27px;   
 }
 
 .button--light {
@@ -274,13 +305,13 @@ position: relative;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 23px 27px;
-  min-height: 164px;
+  padding: 18px 27px;
+  min-height: 158px;
 }
 
 .news__data {
   font-size: 14px; 
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .news__title {
@@ -366,7 +397,7 @@ position: relative;
 }
 
 .btn--wh {
-  border: 2px solid #fff
+  border: 1px solid #fff
 }
 
 .footer {
