@@ -273,10 +273,12 @@ position: relative;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  color: #8F00FF;
 }
 
 .btn--press{
   background: #8F00FF;
+  color: #fff;
 }
 
 .news__item {
