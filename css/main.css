@@ -48,6 +48,12 @@ body, html {
   height: 100%;
 }
 
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -200,7 +206,7 @@ body, html {
 }
 
 .section__title--new {
-  background: url("../img/new.png") no-repeat 328px
+  background: url("../img/new.png") no-repeat 328px;
 }
 
 .offers {
@@ -663,7 +669,7 @@ body, html {
 .inner-section {
   background: #fff;
   color: #1A1B1E;
-  padding: 95px 0 65px; 
+  padding: 65px 0 65px; 
 }
 
 .inner-section--bg--gray {
@@ -673,7 +679,7 @@ body, html {
 .inner-section__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 64px;
+  margin-bottom: 55px;
 }
 
 .partners {
@@ -712,4 +718,257 @@ body, html {
 
 .inner-footer {
   margin-top: auto;
+}
+
+/* review page */
+
+.reviews {
+  column-count: 2;
+  column-gap: 30px;
+  margin-top: 27px;
+  margin-bottom: 57px;
+}
+
+.reviews__item {
+  margin-bottom: 20px;
+}
+
+.review {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #F4F5F5;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  height: 139px;
+  width: 139px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.review__user {
+  display: flex;
+  align-items: center;  
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E77A4;
+  margin-bottom: 11px;  
+}
+
+.review__user:after {
+  content: url(../img/avatars/vk-blue.png);
+  height: 30px;  
+  margin-left: 10px;
+}
+
+.review__tags {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tag {
+  font-size: 13px;
+  color: #303030;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background: #B9EAE4;
+}
+
+.review__title {
+  font-size: 30px;
+  color: #1A1B1E;
+  font-weight: bold;
+  margin-bottom: 17px;  
+}
+
+.review__content-text {
+  margin-bottom: 50px;
+  color: #818181;
+  line-height: 1.7;
+}
+
+.review__data {
+  font-size: 14px;
+  color: #1A1B1E;
+  font-weight: bold;
+}
+
+.separator {
+  background: #17191C url(../img/people.png) right 24% bottom no-repeat;
+  min-height: 363px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  color: #fff;
+}
+
+.separator__content {
+  max-width: 40%;
+}
+
+.separator__title {
+  font-size: 48px;
+  font-weight: bold;  
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 5px;  
+  border: none;
+  background: #fff;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #1A1B1E;
+  border: 2px solid #fff;
+}
+
+.form__input:last-child { 
+  margin-right: 0;
+}
+
+.form__input::placeholder {
+  color: #666666;
+ 
+}
+
+.form__input--textarea {
+  height: 235px;
+}
+
+.form__input:hover {
+  border: 2px solid #8F00FF;
+}
+
+.form__controls {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.form__controls--title {
+  width: 39%;
+  font-size: 18px;
+}
+
+.controls {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.controls__item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.controls__elem {
+  cursor: pointer;
+}
+
+.controls__checkbox:checked ~ .contacts__tag {
+  background: #303030;
+  color: #E7E7E7;
+}
+
+.controls__checkbox {
+  display: none;
+}
+
+.button--color--black {
+  background: #2B2B2B;
+}
+
+.form__button {
+  margin-right: 13px;
+}
+
+.form__button:last-child {
+  margin-right: 0;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* welcome page */
+
+.welcome {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/center.png) center bottom / cover no-repeat;
+}
+
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 1.5s;
+  /* cubic-bezier(.01,.76,.43,1); */
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.central__logo {
+  margin-bottom: 35px;
+  height: 70px;
+  width: 315px;
+}
+
+.button__welcome {
+  padding: 18px 59px;
+}
+
+@keyframes bounce {
+  0 {
+    transform: translateY(0);
+  }
+
+  20% {
+    animation-timing-function: cubic-bezier(.01,.76,.43,1);
+    transform: translateY(-30px);
+  }
+
+  35% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-15px);
+  }
+
+  65% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-4px);
+  }
+
+  80% {
+    transform: translateY(0);   
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
