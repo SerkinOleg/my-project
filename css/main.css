@@ -121,14 +121,6 @@ button {
   left: 420px;
 } */
 
-.contacts {
-  /* position: absolute;
-  top: 19px;
-  right: 0; */
-  font-style: normal;
-  text-align: right;
-}
-
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -152,6 +144,19 @@ button {
   text-decoration: none;
 }
 
+.menu__link:hover {
+  color: #8F00FF;
+  transition: 1s;
+}
+
+.contacts {
+  /* position: absolute;
+  top: 19px;
+  right: 0; */
+  font-style: normal;
+  text-align: right;
+}
+
 .contacts__phone {
   text-decoration: none;
   font-size: 26px;
@@ -161,7 +166,78 @@ button {
 .contacts__info {
   font-size: 13px;
   text-decoration: underline;  
+  color: #98A4A8;
 }
+
+.contacts__info:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  
+}
+
+.contacts:hover .dropdown__menu  {
+  /* display: block; */
+  right: 0;
+  opacity: 1;
+}
+
+.contacts:hover .triangle {
+  right: 40px;
+  opacity: 1;
+}
+
+.dropdown__menu {
+  position: absolute;
+  background: #CDD1D2;
+  border: 1px solid #CDD1D2;
+  height: 65px;
+  width: 160px;
+  padding: 8px;
+  border-radius: 5px;  
+  color: #1E1F20;  
+  right: -9999px;
+  /* display: none; */
+  margin-top: 11px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.triangle {  
+  position: absolute;
+  border: 11px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color:#CDD1D2;
+  border-top-width: 0;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  right: -9999px;  
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.dropdown__menu:before {
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.dropdown__item--bold {
+  font-weight: bold;
+}
+
+.dropdown__list{
+  text-align: left;
+}
+
 
 .contacts__desc {
   font-size: 11px;
@@ -193,6 +269,11 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+}
+
+.button__hero:hover {
+  background: #741BBA;
+  transition: 1s;
 }
 
 .section__offers {
@@ -306,6 +387,7 @@ button {
 .button--light:hover {
   background: #8F00FF;
   color: #fff;
+  transition: 1s;
 }  
 
 .section__news {
@@ -405,6 +487,12 @@ button {
   line-height: 32px;
 }
 
+.pagination__link:hover {
+  background: #8F00FF;
+  color: #fff;
+  transition: 1s;
+}
+
 .pagination__item--active .pagination__link {
   background: #8F00FF;
 }
@@ -466,6 +554,11 @@ button {
 
 .btn--wh {
   border: 1px solid #fff;   
+}
+
+.btn--wh:hover {
+  background: #741BBA;  
+  transition: 1s;
 }
 
 .footer-container {
@@ -537,6 +630,7 @@ button {
 
 .socials__item--icon--telegram .socials__link:hover {
   background-image: url("../img/telegram-hover.png");
+  transition: 1s;
 }
 
 .socials__item--icon--vk .socials__link {
@@ -545,6 +639,7 @@ button {
 
 .socials__item--icon--vk .socials__link:hover {
   background-image: url("../img/vk-hover.png");
+  transition: 1s;
 }
 
 .socials__item--icon--fb .socials__link {
@@ -553,6 +648,7 @@ button {
 
 .socials__item--icon--fb .socials__link:hover {
   background-image: url("../img/fb-hover.png");
+  transition: 1s;
 }
 
 .socials__item--icon--inst .socials__link {
@@ -561,6 +657,7 @@ button {
 
 .socials__item--icon--inst .socials__link:hover {
   background-image: url("../img/inst-hover.png");
+  transition: 1s;
 }
 
 /* .main-page-wrapper {
@@ -709,6 +806,7 @@ button {
 
 .partners__link:hover {
   filter: grayscale(0);
+  transition: 1s;
 }
 
 .inner-footer__container {
@@ -758,9 +856,15 @@ button {
   display: flex;
   align-items: center;  
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bold;  
+  margin-bottom: 11px; 
+  text-decoration: none; 
+}
+
+.review__user:hover {
   color: #2E77A4;
-  margin-bottom: 11px;  
+  text-decoration: underline;
+  transition: 1s;
 }
 
 .review__user:after {
@@ -778,7 +882,10 @@ button {
   font-size: 13px;
   color: #303030;
   padding: 8px 16px;
-  border-radius: 50px;
+  border-radius: 50px;  
+}
+
+.review__tag-item {
   background: #B9EAE4;
 }
 
@@ -821,7 +928,7 @@ button {
 
 .form__row {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .form__input {
@@ -851,36 +958,43 @@ button {
 
 .form__input:hover {
   border: 2px solid #8F00FF;
+  transition: 1s;
 }
 
 .form__controls {
   display: flex;
   margin-bottom: 16px;
+  align-items: baseline;
 }
 
 .form__controls--title {
-  width: 39%;
-  font-size: 18px;
+  width: 438px;
+  font-size: 18px;  
 }
 
 .controls {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;   
 }
 
-.controls__item {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.controls__item { 
+  margin-right: 8px;
+  margin-bottom: 13px;
 }
 
 .controls__elem {
   cursor: pointer;
 }
 
+.contacts__tag {
+  background: #E7E7E7;
+  color: #303030;
+}
+
 .controls__checkbox:checked ~ .contacts__tag {
-  background: #303030;
-  color: #E7E7E7;
+  background: #B9EAE4; 
+  color: #1A1B1E; 
 }
 
 .controls__checkbox {
@@ -888,7 +1002,17 @@ button {
 }
 
 .button--color--black {
+  background: #8E8E8E;
+}
+
+.button--color--black:hover {
   background: #2B2B2B;
+  transition: 1s;
+}
+
+.button--color--blue:hover {
+  background: #741BBA;
+  transition: 1s;
 }
 
 .form__button {
@@ -925,7 +1049,7 @@ button {
   animation: bounce 1.5s;
   /* cubic-bezier(.01,.76,.43,1); */
   opacity: 0;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
 }
 
 .central__logo {
@@ -938,8 +1062,13 @@ button {
   padding: 18px 59px;
 }
 
+.button__welcome:hover {
+  background: #741BBA;
+  transition: 1s;
+}
+
 @keyframes bounce {
-  0 {
+  0 {    
     transform: translateY(0);
   }
 
