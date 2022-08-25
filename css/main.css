@@ -196,7 +196,8 @@ button {
   border: 1px solid #CDD1D2;
   height: 65px;
   width: 160px;
-  padding: 8px;
+  padding: 12px;
+  padding-left: 20px;
   border-radius: 5px;  
   color: #1E1F20;  
   right: -9999px;
@@ -236,6 +237,8 @@ button {
 
 .dropdown__list{
   text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 
